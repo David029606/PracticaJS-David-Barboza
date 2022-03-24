@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Pokedex</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="inputtext">
+        <input type="text" placeholder="Pokemon" id="pokename" />
+      </div>
+
+      <div id="data-poke-card" class="data-poke-card">
+        <div data-poke-name id="data-poke-name">Pokemon</div>
+        <div id="data-poke-id"></div>
+        <div id="img-container" class="img-container">
+          <img
+            id="data-poke-img"
+            src="./pokeball.png"
+            alt="pokemon"
+            width="200px"
+          />
+          <br />
+          <button onclick="fetchpokemon()">cambiar pokemon</button>
+        </div>
+        <div id="poke-types" class="poke-types"></div>
+        <div id="poke-stats" class="poke-stats"></div>
+        <hr />
+        <div id="poke-moves" class="moves__list"></div>
+      </div>
+    </div>
+  </body>
+  <footer><script src="./JS/JS.js"></script></footer>
+</html>
